@@ -20,10 +20,6 @@ namespace MAUICustomRendererSample
 #if __ANDROID__
 				handlers.AddCompatibilityRenderer(typeof(Label), typeof(MAUICustomRendererSample.Platforms.Android.MyLabelRenderer));
 #endif
-
-#if __IOS__
-					handlers.AddCompatibilityRenderer(typeof(Label), typeof(MAUICustomRendererSample.Platforms.Android.MyLabelRenderer));
-#endif
 				})
 				.ConfigureFonts(fonts =>
 				{
